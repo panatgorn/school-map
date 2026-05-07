@@ -98,6 +98,46 @@
             tile_layer_24a395265479c6c3d6503dfe608b515b.addTo(map_82977add054f9c261c76c709ceb2a820);
         
     
+            var tile_layer_110c257e8b2c9ebb72403429ff88cce9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_110c257e8b2c9ebb72403429ff88cce9.addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var tile_layer_4856db2b5e335980a6961b47036f9034 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4856db2b5e335980a6961b47036f9034.addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
             var marker_1f864461713217515ce1d0ec693e51a3 = L.marker(
                 [13.7446, 100.5263],
                 {
@@ -289,5 +329,51 @@
     
                 marker_e113cf434ecb4f3bcb2c90578217193f.setIcon(icon_2fd367521ee10ec95239344a18814d57);
             
+    
+            var marker_chula = L.marker(
+                [13.7367, 100.5331],
+                {}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+            var icon_chula = L.AwesomeMarkers.icon({
+                "markerColor": "pink", "iconColor": "white", "icon": "university", "prefix": "fa", "extraClasses": "fa-rotate-0"
+            });
+            var popup_chula = L.popup({"maxWidth": "100%"});
+            popup_chula.setContent($(`<div style="width: 100.0%; height: 100.0%;">จุฬาลงกรณ์มหาวิทยาลัย</div>`)[0]);
+            marker_chula.bindPopup(popup_chula);
+            marker_chula.bindTooltip(`<div>ศาลาพระเกี้ยว</div>`, {"sticky": true});
+            marker_chula.setIcon(icon_chula);
+
+            var marker_siam = L.marker(
+                [13.7445, 100.5325],
+                {}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+            var icon_siam = L.AwesomeMarkers.icon({
+                "markerColor": "blue", "iconColor": "white", "icon": "shopping-bag", "prefix": "fa", "extraClasses": "fa-rotate-0"
+            });
+            var popup_siam = L.popup({"maxWidth": "100%"});
+            popup_siam.setContent($(`<div style="width: 100.0%; height: 100.0%;">สยามสแควร์</div>`)[0]);
+            marker_siam.bindPopup(popup_siam);
+            marker_siam.bindTooltip(`<div>Siam Square</div>`, {"sticky": true});
+            marker_siam.setIcon(icon_siam);
+            
+    
+            var layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers = {
+                base_layers : {
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e1b\u0e01\u0e15\u0e34 (OpenStreetMap)" : tile_layer_24a395265479c6c3d6503dfe608b515b,
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e2a\u0e35\u0e2a\u0e27\u0e48\u0e32\u0e07 (CartoDB)" : tile_layer_110c257e8b2c9ebb72403429ff88cce9,
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e24\u0e14\u0e32\u0e27\u0e40\u0e17\u0e35\u0e22\u0e21 (Esri Satellite)" : tile_layer_4856db2b5e335980a6961b47036f9034,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1118afabd25ebfcc79f38b6f5de6cdce = L.control.layers(
+                layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers.base_layers,
+                layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
 </script>
 </html>
