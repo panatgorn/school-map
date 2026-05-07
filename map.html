@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82977add054f9c261c76c709ceb2a820 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_82977add054f9c261c76c709ceb2a820" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_82977add054f9c261c76c709ceb2a820 = L.map(
+                "map_82977add054f9c261c76c709ceb2a820",
+                {
+                    center: [13.7446, 100.5263],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24a395265479c6c3d6503dfe608b515b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_24a395265479c6c3d6503dfe608b515b.addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var marker_1f864461713217515ce1d0ec693e51a3 = L.marker(
+                [13.7446, 100.5263],
+                {
+}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var icon_bb57356ca654f9e2ff1a0b02cfd44667 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "school",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5aaad683f0ee428edc5ec2a9da1b3095 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aae2cea1d8c355de0e19da9cd53aa8f2 = $(`<div id="html_aae2cea1d8c355de0e19da9cd53aa8f2" style="width: 100.0%; height: 100.0%;">โรงเรียนสาธิต มศว ปทุมวัน</div>`)[0];
+                popup_5aaad683f0ee428edc5ec2a9da1b3095.setContent(html_aae2cea1d8c355de0e19da9cd53aa8f2);
+            
+        
+
+        marker_1f864461713217515ce1d0ec693e51a3.bindPopup(popup_5aaad683f0ee428edc5ec2a9da1b3095)
+        ;
+
+        
+    
+    
+            marker_1f864461713217515ce1d0ec693e51a3.bindTooltip(
+                `<div>
+                     คลิกเลย
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f864461713217515ce1d0ec693e51a3.setIcon(icon_bb57356ca654f9e2ff1a0b02cfd44667);
+            
+    
+            var marker_52ceca4b859dbb3fb58bc2ed567f9cee = L.marker(
+                [13.7466, 100.5347],
+                {
+}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var icon_953c8a5b157dc80d9ff8499eb21cb453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ed990a806cb200b42909de2d10662e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb367e7e097c0ee7515571e922023f39 = $(`<div id="html_fb367e7e097c0ee7515571e922023f39" style="width: 100.0%; height: 100.0%;">Siam Paragon</div>`)[0];
+                popup_2ed990a806cb200b42909de2d10662e9.setContent(html_fb367e7e097c0ee7515571e922023f39);
+            
+        
+
+        marker_52ceca4b859dbb3fb58bc2ed567f9cee.bindPopup(popup_2ed990a806cb200b42909de2d10662e9)
+        ;
+
+        
+    
+    
+            marker_52ceca4b859dbb3fb58bc2ed567f9cee.bindTooltip(
+                `<div>
+                     คลิกเลย
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52ceca4b859dbb3fb58bc2ed567f9cee.setIcon(icon_953c8a5b157dc80d9ff8499eb21cb453);
+            
+    
+            var marker_a9afc623f393c3c3900fdebcef07c6a4 = L.marker(
+                [13.7449, 100.5298],
+                {
+}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var icon_be7e926ffad0e0e82ad9c6147f61e919 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-bag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e73135398112b9ceb3ae948b5a95c0a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1783a9c81fb263d3f27a4d338f7ccdcd = $(`<div id="html_1783a9c81fb263d3f27a4d338f7ccdcd" style="width: 100.0%; height: 100.0%;">MBK CENTER</div>`)[0];
+                popup_e73135398112b9ceb3ae948b5a95c0a2.setContent(html_1783a9c81fb263d3f27a4d338f7ccdcd);
+            
+        
+
+        marker_a9afc623f393c3c3900fdebcef07c6a4.bindPopup(popup_e73135398112b9ceb3ae948b5a95c0a2)
+        ;
+
+        
+    
+    
+            marker_a9afc623f393c3c3900fdebcef07c6a4.bindTooltip(
+                `<div>
+                     คลิกเลย
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9afc623f393c3c3900fdebcef07c6a4.setIcon(icon_be7e926ffad0e0e82ad9c6147f61e919);
+            
+    
+            var marker_e113cf434ecb4f3bcb2c90578217193f = L.marker(
+                [13.746, 100.5265],
+                {
+}
+            ).addTo(map_82977add054f9c261c76c709ceb2a820);
+        
+    
+            var icon_2fd367521ee10ec95239344a18814d57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "futbol",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18beb5d51507e7e1ed0c2dcd5864535a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e778b3284e103ce7511df1c473f00c8 = $(`<div id="html_5e778b3284e103ce7511df1c473f00c8" style="width: 100.0%; height: 100.0%;">สนามกีฬาแห่งชาติ</div>`)[0];
+                popup_18beb5d51507e7e1ed0c2dcd5864535a.setContent(html_5e778b3284e103ce7511df1c473f00c8);
+            
+        
+
+        marker_e113cf434ecb4f3bcb2c90578217193f.bindPopup(popup_18beb5d51507e7e1ed0c2dcd5864535a)
+        ;
+
+        
+    
+    
+            marker_e113cf434ecb4f3bcb2c90578217193f.bindTooltip(
+                `<div>
+                     คลิกเลย
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e113cf434ecb4f3bcb2c90578217193f.setIcon(icon_2fd367521ee10ec95239344a18814d57);
+            
+</script>
+</html>
